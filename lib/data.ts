@@ -221,6 +221,23 @@ export const projects: Project[] = [
     ],
     tech: ["Python", "Pandas", "REST APIs", "SQL"],
   },
+  {
+    slug: "glowcelestia",
+    title: "GlowCelestia — Interactive 3D Hand-Tracking Experience",
+    category: "Computer Vision",
+    tagline: "Real-time hand-tracking meets an immersive 3D celestial scene in the browser.",
+    featured: true,
+    overview: [
+      "GlowCelestia is an interactive web experience that combines real-time hand-tracking with a dynamic, animated 3D celestial scene rendered entirely in the browser.",
+      "Webcam input is processed with MediaPipe Hands to detect hand landmarks in real time, which drive interactions within a Three.js scene — creating a playful, gesture-controlled interface with no installs required.",
+    ],
+    achievements: [
+      "Built a real-time hand-tracking pipeline using MediaPipe Hands integrated directly into a React + Three.js rendering loop.",
+      "Designed an interactive 3D celestial scene with React Three Fiber, animated with Framer Motion for smooth transitions.",
+      "Deployed as a fully client-side, webcam-powered web app accessible from any modern browser.",
+    ],
+    tech: ["React", "Vite", "Three.js", "React Three Fiber", "MediaPipe", "Tailwind CSS", "Framer Motion"],
+  },
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);
