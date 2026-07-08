@@ -158,20 +158,20 @@ export const projects: Project[] = [
   },
   {
     slug: "multimodal-cancer-prognosis",
-    title: "Multimodal Cancer Prognosis System",
+    title: "Multimodal Lung Cancer Prognosis Pipeline",
     category: "Deep Learning",
-    tagline: "Late-fusion network across histopathology, genomics & clinical data — 0.89 AUC-ROC.",
+    tagline: "Genomics, CT imaging & clinical data modeled independently for lung cancer prognosis — each explained with SHAP & LIME.",
     featured: true,
     overview: [
-      "A multimodal deep-learning system for cancer prognosis that fuses histopathology imagery, genomic profiles, and clinical records into a single predictive model.",
-      "A late-fusion neural architecture combines the modalities, and Explainable AI techniques surface which features drive each prediction — making the model's reasoning interpretable for clinical review.",
+      "A three-part machine learning pipeline analyzing lung cancer (TCGA-LUAD) across genomics, CT imaging, and clinical data — each modality modeled independently as a foundation for a fused prognostic system.",
+      "Every model is paired with explainability techniques (SHAP, LIME, Grad-CAM), since interpretability is as important as raw accuracy in a clinical setting.",
     ],
     achievements: [
-      "Developed a Late-Fusion Neural Network integrating histopathology, genomic, and clinical data — 0.89 AUC-ROC.",
-      "Leveraged Explainable AI (XAI) to visualize feature importance for clinical interpretability.",
-      "Optimized PyTorch preprocessing pipelines for heterogeneous data across multiple cancer types.",
+      "Genomics: built a TCGA feature pipeline and trained Random Forest, XGBoost, and a TabTransformer to classify tumor mutation burden, with SHAP/LIME interpretability.",
+      "CT Imaging: implemented a 3D CNN for lung nodule classification on the LUNA16 dataset (2,163 CT scan patches), with Grad-CAM for explainable predictions on volumetric scans.",
+      "Clinical: merged TCGA-LUAD clinical, exposure, and family-history tables and trained a TabTransformer to predict disease outcomes, with SHAP/LIME explanations.",
     ],
-    tech: ["Python", "PyTorch", "Multimodal Learning", "CNNs", "SHAP", "LIME"],
+    tech: ["Python", "PyTorch", "XGBoost", "TabTransformer", "3D CNN", "SHAP", "LIME", "Grad-CAM"],
   },
   {
     slug: "smart-city-surveillance",
