@@ -176,19 +176,19 @@ export const projects: Project[] = [
   },
   {
     slug: "smart-city-surveillance",
-    title: "Smart City Urban Surveillance",
+    title: "Smart City Urban Surveillance — Pedestrian Detection",
     category: "Computer Vision",
-    tagline: "Real-time pedestrian detection at 30+ FPS on edge hardware.",
+    tagline: "Benchmarking YOLOv8n vs YOLOv8s for real-time pedestrian detection on the Cityscapes dataset.",
     featured: true,
     overview: [
-      "A real-time urban surveillance system built around a fine-tuned YOLOv8 detector for pedestrian detection on custom-annotated city datasets.",
-      "The model is optimized with TensorRT for high-throughput inference on edge hardware, sustaining 30+ FPS for live deployment scenarios.",
+      "A real-time urban surveillance system built around YOLOv8 for pedestrian detection, trained and benchmarked on the Cityscapes dataset.",
+      "Both YOLOv8n and YOLOv8s variants were compared across model-size vs. accuracy/speed trade-offs to identify the optimal model for edge deployment.",
     ],
     achievements: [
-      "Fine-tuned YOLOv8 for real-time pedestrian detection — 83% precision on custom-annotated urban datasets.",
-      "Deployed with TensorRT for optimized inference at 30+ FPS on edge hardware.",
+      "Trained and benchmarked YOLOv8n and YOLOv8s for real-time pedestrian detection on the Cityscapes dataset.",
+      "Compared both models across model-size vs. accuracy/speed trade-offs to select the optimal variant for edge deployment.",
     ],
-    tech: ["Python", "YOLOv8", "OpenCV", "TensorRT"],
+    tech: ["Python", "YOLOv8", "OpenCV", "Cityscapes Dataset"],
   },
   {
     slug: "autonomous-delivery-robot",
