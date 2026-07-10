@@ -139,23 +139,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "ashen",
-    title: "ASHEN — AI-Driven Automated Penetration Testing",
-    category: "Agentic AI",
-    tagline: "LLM-driven security framework that cuts manual reporting time by 65%.",
-    featured: true,
-    badge: "Final Year Project",
-    overview: [
-      "ASHEN is an automated penetration-testing framework that uses large language models to interpret raw vulnerability-scan output and turn it into structured, actionable security findings.",
-      "A distributed FastAPI + Redis backend coordinates concurrent host exploitation and streams real-time monitoring, while an LLM layer generates remediation guidance — dramatically reducing the manual effort of security reporting.",
-    ],
-    achievements: [
-      "Engineered an automated security framework using LLMs to analyze vulnerability scans, reducing manual reporting time by 65%.",
-      "Architected a distributed backend using FastAPI and Redis, enabling concurrent host exploitation and real-time monitoring.",
-      "Implemented automated remediation generation, achieving 95% accuracy in actionable security patches.",
-    ],
-    tech: ["Python", "FastAPI", "Redis", "Celery", "LLMs", "Docker", "Nmap", "OpenVAS", "Metasploit"],
-  },
+  slug: "ashen",
+  title: "ASHEN — AI-Driven Automated Penetration Testing",
+  category: "Agentic AI",
+  tagline: "LLM-driven security framework that turns raw vulnerability scans into structured, actionable reports.",
+  featured: true,
+  badge: "Final Year Project",
+  overview: [
+    "ASHEN is an automated penetration-testing framework that uses large language models to interpret raw vulnerability-scan output and turn it into structured, actionable security findings.",
+    "A distributed FastAPI + Redis backend coordinates concurrent host exploitation and streams real-time monitoring, while a locally-hosted LLM (Ollama) grounded by a Retrieval-Augmented Generation (RAG) pipeline generates verified, relevance-checked remediation guidance — all backed by a React dashboard and PostgreSQL data layer for centralized scan tracking.",
+  ],
+  achievements: [
+    "Engineered an automated security framework using LLMs to analyze vulnerability scans and generate structured reports.",
+    "Designed and integrated a Retrieval-Augmented Generation (RAG) pipeline with a locally-hosted LLM (Ollama) to ground AI-generated attack recommendations and remediation guidance in verified security knowledge, improving relevance and reducing hallucinated advice.",
+    "Architected a distributed backend using FastAPI and Redis, enabling concurrent host exploitation and real-time monitoring, backed by a React dashboard and PostgreSQL data layer for centralized scan tracking and reporting.",
+    "Implemented role-based access control, audit logging, and sandboxed exploit validation to ensure secure, ethical, human-approved operation.",
+  ],
+  tech: ["Python", "FastAPI", "RAG", "LLMs", "Ollama", "PostgreSQL", "React", "Redis", "Nmap", "Hydra", "OpenVAS", "Metasploit"],
+},
   {
     slug: "multimodal-cancer-prognosis",
     title: "Multimodal Lung Cancer Prognosis Pipeline",
